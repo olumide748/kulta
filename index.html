@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KULTA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/index.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
+
+</head>
+<body>
+    <main>
+        <section class="first">
+        <div class=" bg-img">
+            <div class="flex justify-between  w-[80%] ml-[150px] pt-8">
+                <img src="/kultalogo.jpg" class="w-[15%] h-[15%] " alt="">
+                <button class="border-double border-4 border-indigo-600   bg-blue-500 text-white px-8 py-2 rounded-md hover:bg-blue-600 hover:text-white" onclick="purchase()">COURSE</button>
+            </div>
+            <p id="error"></p>
+            <div class="relative top-[130px]">
+            <h1 class=" flex mx-auto justify-center text-7xl text-white font-serif">MUSICAL</h1>
+            <h1 class=" flex mx-auto justify-center text-7xl text-white font-serif"> &</h1>
+            <h1 class="flex mx-auto justify-center text-7xl text-white font-serif"> COMPUTER ACADEMY</h1>
+            </div>
+            <div>
+            <button class="relative top-[300px] text-white flex mx-auto justify-center border-double border-4 border-indigo-600  bg-blue-500 text-white px-10 py-4 rounded-md hover:bg-blue-600 hover:text-white " onclick="purchase()">VIEW COURSE</button>
+            </div>
+        </div>
+        </section>
+
+        <section class="" >
+            <div class="second flex flex-col md:flex-row lg:flex-row w-[80%] ml-[150px] pt-24 ">
+                <div class="w-[50%]">
+                    <p class="text-slate-500 text-4xl">KULTA is the foremost professional musical and computer institution in Nigeria. Information
+                        brings knowledge, and knowledge propels progress. Over the years, we have trained thousands of 
+                        students in the musical, multimedia, and tech eco system. Our student's tremendous success has always 
+                        been our pride.  </p>
+                </div>
+
+                <div class="swiffy-slider w-[50%]">
+                    <ul class="slider-container">
+                        <li><img src="/software.jpeg" class="w-[100%] h-[100%]"></li>
+                        <li><img src="/software2.png"  class="w-[100%] h-[100%]"></li>
+                        <li><img src="/software.jpeg"  class="w-[100%] h-[100%]"></li>
+                    </ul>
+                
+                    <button type="button" class="slider-nav "></button>
+                    <button type="button" class="slider-nav slider-nav-next"></button>
+                
+                    <div class="slider-indicators">
+                        <button class="active"></button>
+                        <button> < </button>
+                        <button> > </button>
+                    </div>
+                </div>    
+            </div>
+        </section>
+
+        <section>
+            <div class="rate mt-24">
+                <h1>RATE US ON A SCALE OF 1-10 AND SAVE YOUR RATINGS 🥰</h1>
+                <div class="of">
+                <h2 id="count-el">0</h2>   
+                <h2 class="">/10</h2>
+                </div> 
+                <button id="increment-btn" onclick="increment()" class=" bb border-solid border-2 border-indigo-600 ...">+</button>
+                <button id="increment-btn" onclick="decrement()" class=" bb border-solid border-2 border-indigo-600 ...">-</button>
+                <button id="save-btn" onclick="save()" class=" bb border-solid border-2 border-indigo-600 ...">SAVE</button>
+                <p id="save-el"> RATING ENTRY:</p>
+            </div>
+        </section>
+    </main>
+
+   <script src="/index.js"></script>
+</body>
+</html>
