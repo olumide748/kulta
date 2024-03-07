@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/index.css">
     <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
     <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
+    <script src="https://unpkg.com/smoothscroll-polyfill/dist/smoothscroll.min.js" crossorigin="anonymous" defer></script>
 
 </head>
 <body>
@@ -42,7 +43,7 @@
 
                 
                 
-                <div class="swiffy-slider w-[100%] md:w-[50%] mt-8 md:mt-4">      
+                <div class="swiffy-slider  slider-nav-autoplay slider-nav-autopause w-[100%] md:w-[50%] mt-8 md:mt-4">      
                     <h5 class="text-slate-500">SOFTWARES:</h5>            
                     <ul class="slider-container">
                         <li><img src="/software.jpeg" class="w-[100%] h-[100%]"></li>
@@ -50,10 +51,10 @@
                         <li><img src="/software.jpeg"  class="w-[100%] h-[100%]"></li>
                     </ul>
                 
-                    <button type="button" class="slider-nav "></button>
-                    <button type="button" class="slider-nav slider-nav-next"></button>
+                    <button type="button" class="slider-nav"></button>
+                    <button type="button" class="slider-nav slider-nav-next "></button>
                 
-                    <div class="slider-indicators">
+                    <div class="slider-indicators ">
                         <button class="active"></button>
                         <button> < </button>
                         <button> > </button>
