@@ -2,7 +2,7 @@ let errorParagraph = document.getElementById("error")
 
 function purchase() {
     console.log("button clicked")
-    errorParagraph.textContent = "WEBSITE IS CURRENLY GOING THROUGH UPGRADES CHECK BACK IN FEW MINUTES"
+    errorParagraph.textContent = "WEBSITE IS CURRENLY GOING THROUGH UPGRADES REFRESH AND CHECK BACK IN FEW MINUTES"
 }
 
 let countEl = document.getElementById("count-el")
